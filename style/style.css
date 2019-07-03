@@ -4,12 +4,21 @@
   box-sizing: border-box;
 }
 
-body {
+
+
+/*
+=========================================
+M - CSS
+========================================= 
+*/
+
+
+.me-body {
   background: url(/img/background.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
-.container {
+.me-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -18,13 +27,13 @@ body {
   margin-top: 2rem;
 }
 
-.heading-wrapper {
+.me-heading-wrapper {
   width: 100%;
   background-color: red;
   text-align: center;
 }
 
-.column-wrapper {
+.me-column-wrapper {
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -34,7 +43,7 @@ body {
   height: 100%;
 }
 
-.column {
+.me-column {
   background-color: aqua;
   margin: 1%;
   display: flex;
@@ -45,11 +54,11 @@ body {
 
 /*
 =========================================
-CUSTOM CARDS
+M - CUSTOM CARDS
 ========================================= 
 */
 
-.custom-card {
+.me-custom-card {
   flex: 1;
   width: 90%;
 }
@@ -58,12 +67,12 @@ CUSTOM CARDS
 
 /*
 =========================================
-MEDIA QUEREIES
+M - MEDIA QUEREIES
 ========================================= 
 */
 
 @media only screen and (max-width: 768px) {
-  .column {
+  .me-column {
     width: 66%;
   }
 
@@ -73,7 +82,7 @@ MEDIA QUEREIES
 }
 
 @media only screen and (max-width: 600px) {
-  .column {
+  .me-column {
     width: 100%;
   }
 }
