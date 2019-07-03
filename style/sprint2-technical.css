@@ -3,7 +3,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   overflow: scroll;
 }
 
@@ -13,7 +13,11 @@ body {
   height: 500px;
   width: 1000px;
   border: 4px dashed purple;
-  margin-top: 5vh;
+  margin-top: 4vh;
+}
+
+.section {
+  height: 80vh;
 }
 
 .text-panel {
@@ -49,11 +53,21 @@ body {
   top: 50%;
   left: 50%;
   height: 250px;
-  width: 250px;
+  width: 350px;
   background-color: rgb(186, 142, 228);
 }
 
-
+.fixed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 5%;
+  top: 15%;
+  height: 220px;
+  width: 220px;
+  background-color: palegoldenrod;
+}
 
 
 
@@ -64,19 +78,19 @@ TEXT
 ========================================= 
 */
 
-/* .container-text { */
-  /* height: 10%; */
-  /* display: flex;
-  justify-content: right; */
-  /* justify-content: center; */ 
-  /* background-color: lightskyblue; */
+.container-text { 
+  height: 10%; 
+  display: flex;
+  align-items: center;
+  justify-content: right; 
+  background-color: lightskyblue; 
 
-/* } */
+ } 
 
-/* h5 {
+h5 {
   margin: none;
   width: 65%;
-} */
+}
 
 .absolute-text {
   margin: 5%;
@@ -85,6 +99,11 @@ TEXT
 .relative-text{
   margin: 5%;
 }
+
+.fixed-text{
+  margin: 5%;
+}
+
 
 span {
   font-size: 2rem;

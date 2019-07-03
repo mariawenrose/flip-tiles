@@ -8,33 +8,46 @@
 </head>
 <body>
   <div class="container">
-    <div class="container-text">
-        <!-- <h5><-- container is the parent element : this blue block is 10% in height of the container (dashed purple lines) </h5> -->
-    </div>
-    <div class="absolute">
-      <p class="absolute-text">
-        <span><b>.absolute-div {</b><br></span>
-        position: absolute;<br>
-        top: 0%;<br>
-        left: 5%;<br>
-        <br>
-        it is placed here because it is 0% from the top of the container,
-        and %5 from the left
-
-        <br>
-        }
-      </p>
-    </div>
-    <div class="relative">
-      <p class="relative-text">
+    <div class="section">
+      <div class="container-text">
+          <h5>this blue block is 10% in height of the container (dashed purple lines) </h5>
+      </div>
+      <div class="absolute">
+        <p class="absolute-text">
+          <span><b>.absolute-div {</b><br></span>
+          position: absolute;<br>
+          top: 0%;<br>
+          left: 5%;<br>
+          <br>
+          it is placed exactly here because it is 0% from the top of the container (which is it's parent),
+          and 5% from the left
+          <br>
+          }
+        </p>
+      </div>
+      <div class="relative">
+        <p class="relative-text">
           <span><b>.relative-div {</b><br></span>
-            position: relative;<br>
-            top: 50%;<br>
-            left: 50%;<br>
+          position: relative;<br>
+          top: 50%;<br>
+          left: 50%;<br>
+          <br>
+          here the div is positioning itself 50% downwards starting from the top of it's parent (the container) and 50% from the left; the blue block is pushing it down by an extra 10% because it is occupying 10% of the parent container<br>
+          }
+        </p>
+      </div>
+      <!-- <div class="fixed">
+        <p class="fixed-text">
+          <span><b>.fixed-div {</b><br></span>
+            position: fixed;<br>
+            top: 15%;<br>
+            right: 15%;<br>
             <br>
-            here the div is positioning itself 50% from the top of the container, and the blue block is pushing it down by an extra 10%
-
-      </p>
+            this div will always chill here, stuck to this position on screen because it is fixed 15% from the top and right of the screen.
+            <br>
+            }
+        </p>
+      </div> -->
     </div>
   </div>
   <!-- <div class="text-panel">
