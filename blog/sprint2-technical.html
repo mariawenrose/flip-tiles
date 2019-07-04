@@ -6,23 +6,23 @@
   <link rel="stylesheet" href="/style/sprint2-technical.css">
   <title>Document</title>
 </head>
+<!-- README: Not all elements (divs) on screen reflect their real css properties. The placement and written values given on screen were used to visually demonstrate how positioning (fixed, absolute, relative) work within an html document: README -->
 <body>
   <div class="container">
     <div class="section">
-      <div class="container-text">
-          <h5>this blue block is 10% in height of the container (dashed purple lines) </h5>
-      </div>
       <div class="absolute">
         <p class="absolute-text">
           <span><b>.absolute-div {</b><br></span>
           position: absolute;<br>
           top: 0%;<br>
-          left: 5%;<br>
+          left: 25%;<br>
           <br>
-          it is placed exactly here because it is 0% from the top of the container (which is it's parent),
-          and 5% from the left
+          I have been placed specifically here 0% from the top of the container (which is my parent)
+          and 25% from the left. I am removed from the normal flow of the document. 
           <br>
-          }
+          <br>
+          Because of this, I can be placed infront of, or behind other elements such as divs without affecting 
+          their placement within the container.
         </p>
       </div>
       <div class="relative">
@@ -32,54 +32,46 @@
           top: 50%;<br>
           left: 50%;<br>
           <br>
-          here the div is positioning itself 50% downwards starting from the top of it's parent (the container) and 50% from the left; the blue block is pushing it down by an extra 10% because it is occupying 10% of the parent container<br>
-          }
+            I have been told to move away from my original position <span class="blue-text">(the blue div)</span> inside the document. 
+          <br>
+          <br>
+          I am positioned offset 50% from the top, and 50% to the left of my parent (the container). 
         </p>
       </div>
-      <!-- <div class="fixed">
+      <!-- README: Not all elements (divs) on screen reflect their real css properties. The placement and written values given on screen were used to visually demonstrate how positioning (fixed, absolute, relative) work within an html document: README -->
+      <div class="relative-original-position">
+        <div class="relative-original-position-text">
+          <h3>.original-relative-div {</h3>
+          <p>
+            I am the original position of the relative div before I was given "position: relative;"
+            <br>
+            <br>
+            This is where I would sit inside my parent container (in the normal flow of the document).
+            <br>
+            <br>
+            If the above div was not positioned absolute I would be sitting pushed beneath the <span class="pink-text">pink line.</span>
+          </p>
+        </div>
+      </div>
+      <div class="fixed">
         <p class="fixed-text">
           <span><b>.fixed-div {</b><br></span>
-            position: fixed;<br>
-            top: 15%;<br>
-            right: 15%;<br>
-            <br>
-            this div will always chill here, stuck to this position on screen because it is fixed 15% from the top and right of the screen.
-            <br>
-            }
+          position: fixed;<br>
+          top: 20%;<br>
+          right: 5%;<br>
+          <br>
+          this lil div will always chill here, stuck to this position on screen because it is fixed 20% from the top and 5% from the right of the screen.
+          <br>
         </p>
-      </div> -->
+      </div>
+    </div>
+    <div class="container-width-key">
+      <div><h4><-----------------------</h4></div>
+      <h4>container = purple dashed square</h4>
+      <div><h4>-----------------------></h4></div>
     </div>
   </div>
-  <!-- <div class="text-panel">
-    <div class="absolute-theory panel">
-      <h4>Absolute Positioning</h4>
-      <p>
-        • It pretty much ignores everything else that is happening on the page and puts itself where you tell it to go. e.g top, left<br>
-        <br>
-        • The example above shows the div positioning itself 0% from the top of the container, and 5% from the left <br>
-        <br>
-        • An element with this type of positioning is not affected by the positioning of other elements and it doesn't affect other elements.<br>
-        <br>
-        • Because of it's permanent nature, it can limit the flexibility of your site because the div will always remain 10% from the top and 30% from the left of the container.<br>
-        <br>
-        <b>NOTE:</b> The parent is called "container" and has a position of RELATIVE, if it was static or did not exist the absolute div would position itself differently.
-      </p>
-    </div>
-    <div class="relative-theory panel">
-      <h4>Relative Positioning</h4>
-      <p>
-        • Places itself relative to it's parent element, it's gonna move around a lot more so that it stays with it's mum or dad.<br>
-        <br>
-        • It's pretty similar to absoulte but it's not. Confusing huh, but when screens get responsive it's nowhere near as much as a headache as absolute.<br>
-        <br>
-        • The example above shows the div postition 50% from where it would normally be and 50% from the left. The blue block at the top is causing it push down even more by an additional 10%
+  <!-- README: Not all elements (divs) on screen reflect their real css properties. The placement and written values given on screen were used to visually demonstrate how positioning (fixed, absolute, relative) work within an html document: README -->
 
-      </p>
-    </div>
-    <div class="fixed-theory panel">
-      <h4>Fixed Positioning</h4>
-    </div>
-  </div> -->
-  
 </body>
 </html>

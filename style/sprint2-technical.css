@@ -11,23 +11,17 @@ body {
 .container {
   position: relative;
   height: 500px;
-  width: 1000px;
-  border: 4px dashed purple;
+  width: 900px;
   margin-top: 4vh;
 }
 
 .section {
   height: 80vh;
+  /* background-color: red; */
+  border: 4px dashed purple;
+ 
 }
 
-.text-panel {
-  height: auto;
-  width: 60vw;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-}
 
 .panel {
   width: 30%;
@@ -39,10 +33,11 @@ body {
   justify-content: center;
   position: absolute;
   top: 0%;
-  left: 5%;
-  height: 250px;
-  width: 250px;
-  background-color: palegreen;
+  left: 25%;
+  height: 280px;
+  width: 450px;
+  background-color: rgb(172, 248, 172);
+  border-bottom: 2px solid rgb(221, 38, 181);
 }
 
 .relative {
@@ -52,9 +47,17 @@ body {
   position: relative;
   top: 50%;
   left: 50%;
-  height: 250px;
+  height: 260px;
   width: 350px;
-  background-color: rgb(186, 142, 228);
+  background-color: rgb(198, 162, 233);
+}
+
+.relative-original-position {
+  position: absolute;
+  background-color: rgba(117, 190, 218, 0.4);  
+  height: 260px;
+  width:350px;
+  display: flex;
 }
 
 .fixed {
@@ -62,11 +65,11 @@ body {
   align-items: center;
   justify-content: center;
   position: fixed;
-  right: 5%;
+  right: 1.5%;
   top: 15%;
-  height: 220px;
-  width: 220px;
-  background-color: palegoldenrod;
+  height: 270px;
+  width: 270px;
+  background-color: rgb(255, 249, 185);
 }
 
 
@@ -100,10 +103,29 @@ h5 {
   margin: 5%;
 }
 
-.fixed-text{
-  margin: 5%;
+.relative-original-position-text {
+  margin: 0rem 2rem;
 }
 
+.fixed-text{
+  margin: 6%;
+}
+
+.pink-text {
+  font-size: 16px;
+  color:  rgb(221, 38, 181);
+}
+
+.blue-text {
+  font-size: 16px;
+  background-color:  lightblue;
+}
+
+.container-width-key {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
 
 span {
   font-size: 2rem;
