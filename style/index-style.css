@@ -1,86 +1,56 @@
-/*
-=========================================
-GLOBAL
-========================================= 
-*/
-
 * {
   padding: 0;
   margin: 0;
-  box-sizing: 0;
-  background-color: mediumspringgreen;
+  box-sizing: border-box;
   font-family: 'IBM Plex Mono', monospace;
 }
 
 body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.container {
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #b9b2ee;
 }
 
 .section {
-  width: 100%;
   margin-top: 2vh;
+  padding-bottom: 2vh;
+  /* border: 2px solid orange; */
+  border-radius: 15px;
+  background-color: #faece0;
 }
-
-.row {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-/*
-=========================================
-UNIQUE SECTIONS
-========================================= 
-*/
 
 #header {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  border: 2px solid orange;
+width: 68%;
+height: auto;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+.header-text {
+width: 34%;
+margin-left: 2rem;
 }
 
 #body-content {
-  display: flex;
-  align-items: center;
-  border: 2px solid orange;
-
+width: 51%;
+height: auto;
+display: flex;
+flex-direction: column;
 }
 
-
-#body-content-links-panel {
-  width: 66%;
-  display: flex;
-  flex-direction: column;
-  border: 2px solid red;
-}
-
-
-
-/*
-=========================================
-COLUMNS
-========================================= 
-*/
-
-.h-col {
-  width: 33%;
+.row {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 }
 
 .f1-col {
-  flex: 1;
-  border: 2px solid skyblue;
+width: 42%;
+margin: 2%;
 }
+
 
 /*
 =========================================
@@ -88,19 +58,39 @@ TEXT
 ========================================= 
 */
 
+
 h1 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  font-family: 'DM Serif Text', serif;
+margin-top: 2rem;
+margin-bottom: 1rem;
+font-family: 'DM Serif Text', serif;
 }
 
-h3,
-.header-intro 
-{
-  text-align: center;
-  border: 2px solid rebeccapurple;
+h3 {
+text-align: center;
 }
 
+.left-align {
+text-align: start;
+}
+
+.underline {
+text-decoration: underline;
+margin-top: 2vh;
+margin-bottom: 2vh;
+}
+
+ul {
+list-style: none;
+text-align: center;
+}
+
+li {
+margin-top: 1rem;
+}
+
+a:visited {
+color: black;
+}
 
 /*
 =========================================
@@ -108,8 +98,15 @@ MEDIA QUERIES
 ========================================= 
 */
 
-@media only screen and (max-width: 600px) {
-  h-col {
-    width: 100%;
-  }
+@media only screen and (max-width: 756px) {
+.header-text {
+  width: 100%;
 }
+#body-content  {
+  width: 68%;
+}
+.f1-col {
+  width: 100%;
+} 
+}
+
