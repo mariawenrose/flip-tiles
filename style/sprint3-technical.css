@@ -1,0 +1,59 @@
+* {
+  margin: none;
+  padding: none;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: darkslategray;
+}
+
+#checkbox-wrapper {
+  width: 80%;
+  border: 1px solid salmon;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+#body-container {
+  width: 80%;
+  border: 1px solid yellowgreen;
+
+}
+
+.text-div {
+  /* display: none; */
+  background-color: rgb(163, 177, 138);
+  margin: 2rem;
+  padding: 2rem;
+  border-radius: 15px;
+}
+
+
+/*
+=========================================
+TEXT
+========================================= 
+*/
+
+h1 {
+  font-family: 'Shrikhand', cursive;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+p {
+  color: rgb(218, 215, 205);
+
+}
+
+h2 {
+  color: rgb(88, 129, 87);
+  /* font-display: bold; */
+}
