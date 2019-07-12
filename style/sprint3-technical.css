@@ -28,8 +28,9 @@ body {
 }
 
 .text-div {
-  /* display: none; */
-  background-color: rgb(163, 177, 138);
+  display: none;
+  /* background-color: rgb(163, 177, 138); */
+  background-color: white;
   margin: 2rem;
   padding: 2rem;
   border-radius: 15px;
@@ -48,12 +49,11 @@ h1 {
   letter-spacing: 1px;
 }
 
-p {
+/* p {
   color: rgb(218, 215, 205);
 
-}
+} */
 
 h2 {
   color: rgb(88, 129, 87);
-  /* font-display: bold; */
 }
